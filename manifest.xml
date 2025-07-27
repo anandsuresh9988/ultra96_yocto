@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <default revision="scarthgap" remote="origin" sync-j="4"/>
+
+  <remote name="origin" fetch="https://git.yoctoproject.org"/>
+  <remote name="oe" fetch="https://github.com/openembedded"/>
+  <remote name="xilinx" fetch="https://github.com/Xilinx"/>
+  <remote name="avnet" fetch="https://github.com/Avnet"/>
+
+  <!-- Yocto Core -->
+  <project name="poky" remote="origin" revision="scarthgap"/>
+
+  <!-- OpenEmbedded Layers -->
+  <project name="meta-openembedded" remote="oe" revision="scarthgap"/>
+
+  <!-- Xilinx Layers -->
+  <project name="meta-xilinx" remote="xilinx" revision="scarthgap"/>
+
+  <!-- Avnet BSP -->
+  <project name="meta-avnet" remote="avnet" revision="master"/>
+
+</manifest>
